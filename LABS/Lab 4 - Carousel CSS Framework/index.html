@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 4 - Carousel CSS Framework</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-secondary">
+<div class="jumbotron bg-dark text-light" style="border-radius: 0px; padding-left: 150px;">
+    <h1>Lab 4 - Carousel CSS Framework</h1>
+    <p class="h3">Let's learn bootstrap development.</p>
+</div>
+<div class="container-fluid ">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="5000">
+                <img src="img/galaxy.jpg" class="d-block w-100" alt="image">
+                <div class="text-warning carousel-caption d-none d-md-block">
+                    <h5>This is galaxy number 1</h5>
+                    <p>Just a random description about galaxy number 1</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="5000">
+                <img src="img/galaxy2.jpg" class="d-block w-100" alt="image">
+                <div class="text-warning carousel-caption d-none d-md-block">
+                    <h5>This is galaxy number 2</h5>
+                    <p>Just a random description about galaxy number 2</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="5000">
+                <img src="img/galaxy3.jpg" class="d-block w-100" alt="image">
+                <div class="text-warning carousel-caption d-none d-md-block">
+                    <h5>This is galaxy number 3</h5>
+                    <p>Just a random description about galaxy number 3</p>
+                </div>
+            </div>
+        </div>
+        <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

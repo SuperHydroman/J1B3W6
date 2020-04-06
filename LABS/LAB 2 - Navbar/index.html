@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1”>
+    <title>LAB2 - Bootstrap Navbar</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></head>
+    <link rel="stylesheet" href="css/style.css">
+<body>
+<div id="container">
+
+    <div class="jumbotron" style="margin-bottom: 0px; border-radius: 0px;">
+        <h1>Lab 2 - Bootstrap Navbar</h1>
+        <p>Let's learn bootstrap development.</p>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <a class="navbar-brand"><img src="img/clevertechie.png"></a>
+            <span class="navbar-text" style="padding-right: 12px;">Clever Techie</span>
+
+            <ul class="navbar-nav">
+                <li class="navitem dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#dropdown_target">
+                        Dropdown
+                        <span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu bg-dark border-0" aria-labelledby="dropdown_target">
+                        <a style="color: rgba(255,255,255,.5);" href="#" class="pl-3 dropdownitem">PHP Videos</a>
+                        <div class="dropdown-divider border-top border-dark"></div>
+                        <a style="color: rgba(255,255,255,.5);" href="#" class="pl-3 dropdownitem">CSS Videos</a>
+                        <div class="dropdown-divider border-top border-dark"></div>
+                        <a style="color: rgba(255,255,255,.5);" href="#" class="pl-3 dropdownitem">Bootstrap Videos</a>
+                    </div>
+                </li>
+                <li class="navitem">
+                    <a href="#" class="nav-link">Over ons</a>
+                </li>
+                <li class="navitem">
+                    <a href="#" class="nav-link">Voorbeelden</a>
+                </li>
+                <li class="navitem">
+                    <a href="#" class="nav-link">Extra info</a>
+                </li>
+                <li class="navitem">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <img class="img-fluid" src="img/bootstrap%20navbar%20cheatsheet.jpg">
+</div>
+</body>
+</html>
